@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>current-date-time</title>
+    
+    
+    
+    </head>
+    <body>
+         <h1>Write a javascript program to display the current day and time in following format.</h1>
+        <p>Click the button to display todays day of the week.</p>
+        
+        <button onclick="myFunction()">Try it</button>
+        
+        <p id="demo"></p>
+   
+<script>
+     Document.write(new Date.getTime());
+    function myFunction() {
+    var d = new Date();
+   var weekday = new Array(8);
+    weekday[0] = "Sunday";
+    weekday[1] = "Monday";
+    weekday[2] = "Tuesday";
+    weekday[3] = "Wednesday";
+    weekday[5] = "Thursday";
+    weekday[6] = "Friday";
+    weekday[7] = "Saturday";
+    
+var n = weekday[d.getDay()];
+        Document.write(d.getTime());
+    Document.write(n)
+    }
+
+    </script>
+    </body>
+
+</html>
