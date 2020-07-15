@@ -1,0 +1,37 @@
+<html>
+<head>
+<title></title>
+<body>
+<h1></h1>
+<p>var declaration are globally scoped or function scoped while let and const are blocked scoped.</p>
+<p>var variable can be updated and re-declared within its scope ; ;let variables can be udated but not re-declared ; const variables can neither be updated nor re-declared.</p>
+<p>They all hoisted to top of their scope.But var variables are intialized with undefined , let and const variables are not innitialized.</p>
+<script>
+var greeter = "hey hi" ;
+var greeter  = "say Hello insted";
+
+console.log(greeter);
+var greeter = "say hello"
+</script>
+<script>
+let greeter = "say hello";
+let times = 4;
+
+if (time>3){
+let hello = "say hello instead";
+console.log(hello);
+}
+console.log(hello)
+</script>
+<script>
+const greeting = "say Hi";
+greeting = "say hello instead";
+
+
+const greeting = {
+message : "say hi";
+times :4
+}
+</script>
+</body>
+</html>

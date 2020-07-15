@@ -1,0 +1,91 @@
+<html>
+<head>
+<title>JS Assignment1</title>
+</head>
+<body>
+
+<h2>console.error():</h2>
+<p>used to log error messages to the console .Useful in testing of code.By default the error message will be highlighted with the red color.<p>
+console.error('This is a simple error');
+<script>
+console.error('This is a simple error');
+</script>
+
+<h2>console.log():</h2>
+<p>y Mainly used to log(print) the otput to the console.we can put any type inside the log(), be it a string , array ,object, boolean etc....<p>
+console.log('abc');
+console.log(1);
+console.log(true);
+console.log(null);
+console.log(undefined);
+console.log([1, 2, 3, 4]);
+
+<script>
+console.log('abc');
+console.log(1);
+console.log(true);
+console.log(null);
+console.log(undefined);
+console.log([1, 2, 3, 4]);
+
+</script>
+
+<h2>console.warn()</h2>
+<p>used to log warning messages to the console.By default the warning messages will be highlighted by yellow color.<p>
+console.warn('This is a simple warning error');
+
+<script>
+console.warn('This is a simple warning error');
+</script>
+
+<h2>console.time()</h2>
+<p>whenever we want to know the amount of time spend by a block or a function , we can make use of the time() and the timeEnd() methods provided by the js console .<p>
+console.time('abc');<br>
+let fun = function(){<br>
+console.log('fun is running');<br>
+}<br>
+let fun2 = function(){<br>
+console.log('fun2 is running..');<br>
+}<br>
+fun();<br>
+fun2();
+<script>
+console.time('abc');
+let fun = function(){
+console.log('fun is running');
+}
+let fun2 = function(){
+console.log('fun2 is running..');
+}
+fun();
+fun2();
+</script>
+
+<h2>console.table():</h2>
+<p>This method allows us to generate a table inside the console.The input must be an array or an object which will be shown as the table..<p>
+console.table({'a' :1, 'b' :2});
+
+<script>
+console.table({'a' :1, 'b' :2});
+</script>
+
+<h2>console.count():</h2>
+<p>This method is used to count the number that the function hit by this counting method.<p><br>
+<p>for(let i=0;i<5;i++){</p><br>
+<p>console.count(i);</p><br>
+}
+<script>
+for(let i=0;i<5;i++){
+console.count(i);
+}
+
+</script>
+
+<h2>console.group and console.groupEnd()</h2>
+<p>These methods of the console object allows us to group contents in a seperate block, which will be indented .Just like the time() snd the timeend() they accept labels and vslues<p>
+
+<script>
+console.group('Simple');
+</script>
+</body>
+</html>
