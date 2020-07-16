@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>String Methods</title>
+</head>
+<body>
+<h3>charAt()</h3>
+<script type="text/javascript">
+	var str = "HELLO WORLD";
+	var res = str.charAt(0);
+	var res1 = str.charAt(str.length-1);
+	document.write("result of charAt" +res+"<br>");
+	document.write("result of charAt" +res1_+"<br>");
+
+</script>
+<script type="text/javascript">
+	var str = "HELLO WORLD";
+	var n = str.charCodeAt(0);
+	var n1 = str.charCodeAt(str.length-1);
+	document.write("result of charCodeAt" +n+"<br>");
+	document.write("result of charCodeAt" +n1);
+
+</script>
+<h3>Concat()</h3>
+<script type="text/javascript">
+	var str3 = "HELLO ";
+	var str4 = "WORLD";
+	var res3 = str3.concat(str4);
+	document.write("concat result is:" +res3);
+
+</script>
+<h3>localcompare()</h3>
+<script type="text/javascript">
+	var str3 = "HELLO ";
+	var str4 = "WORLD";
+	var res3 = str3.localeCompare(str4);
+	document.write(" result is: " +res3);
+
+</script>
+<h3>Slice()</h3>
+<script type="text/javascript">
+	var str3 = "HELLO world ";
+	
+	var res3 = str3.slice(0, 5);
+	document.write(" result is: " +res3);
+
+</script>
+</body>
+</html>

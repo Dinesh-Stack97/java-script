@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3-assignment</title>
+</head>
+<body>
+	<input id = "age" type="number">
+	<button onclick="myFunction">Try it</button>
+	<p id = "demo"></p>
+<script type="text/javascript">
+      function myFunction(){
+      	var age = document.getElementById("age").value;
+      	var text;
+
+      	if (age < 21) {
+
+
+      		text = "cannot drink";
+      	}
+
+
+         else {
+         
+
+         	text = "can drink";
+
+         }
+         document.getElementById("demo").innerHTML = text;
+
+}
+	
+</script>
+</body>
+</html>
